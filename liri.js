@@ -87,9 +87,8 @@ function movieThis() {
 
     Request(queryUrl, function (error, response, body) {
         if (!error && response.statusCode === 200) {
-            //console.log(JSON.parse(body));
             jsonBody = JSON.parse(body);
-
+//vars for the title, year, imdb rating, rotten tomatoes rating, languages in the film, plot, and actors for the specific movie that you are looking up.
             var title = 'Title: ' + jsonBody.Title;
             var year = 'Year: ' + jsonBody.Year;
             var rating = 'IMDB Rating: ' + jsonBody.Ratings[0].Value;
@@ -108,6 +107,7 @@ function movieThis() {
     });
 }
 
+//function to call the random txt file
 function random() {
     fs.readFile('./random.txt', 'utf8', function (err, res) {
         if (err) throw err;
@@ -119,6 +119,7 @@ function random() {
     
 }
 
+//commands that the user can enter to interface with the application
 function switchWrap(command) {
     log();
     switch (command) {
@@ -137,6 +138,7 @@ function switchWrap(command) {
     }
 }
 
+//function to write to the log the users inputs and the application's outputs.
 function log() {
     var commandLog = `Command: ${command}, Search: ${search}\n`;
     fs.appendFile('log.txt', commandLog, function (err) {
