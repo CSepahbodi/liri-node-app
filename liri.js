@@ -38,7 +38,7 @@ function spotifySong() {
     if (search === undefined) {
         search = "The Sign Ace of Base";
     }
-
+//console log the responses
     console.log(`\n------------\n`);
     console.log(command);
     console.log(`\n------------\n`);
@@ -51,8 +51,7 @@ function spotifySong() {
         })
         .then(function (response) {
 
-            //console.log(response.tracks.items[0]);
-            //console.log(response.tracks.items[0].artists[0].name);
+// vars for responses including artists, name of track, preview, and album information
             var artist = response.tracks.items[0].artists[0].name;
             var name = response.tracks.items[0].name;
             var preview = response.tracks.items[0].preview_url;
@@ -74,6 +73,7 @@ function spotifySong() {
         });
 }
 
+//function to look up movie titles through OMDB API
 function movieThis() {
     if (search === undefined) {
         search = 'Mr. Nobody';
@@ -83,7 +83,7 @@ function movieThis() {
     console.log(command);
     console.log(`\n------------\n`);
 
-    var queryUrl = `http://www.omdbapi.com/?t=${search}&y=&plot=short&apikey=trilogy`;
+    var queryUrl = `http://www.omdbapi.com/?t=${search}&y=&plot=short&apikey=e0f54de4`;
 
     Request(queryUrl, function (error, response, body) {
         if (!error && response.statusCode === 200) {
