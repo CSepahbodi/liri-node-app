@@ -1,4 +1,7 @@
+//require the dotenv file so that the keys are loaded into the application for use!
 require('dotenv').config();
+
+//require the NPM packages for twitter, spotify, request, and fs (for logging purposes)
 var Twitter = require('twitter');
 var Spotify = require('node-spotify-api');
 var Request = require('request');
@@ -12,7 +15,7 @@ var args = process.argv.slice(2);
 var command = args[0];
 var search = args[1];
 
-
+//function for pulling tweets from api
 function myTweets() {
     var params = {
         count: '20'
@@ -30,6 +33,7 @@ function myTweets() {
     });
 }
 
+// function to look up songs on spotify
 function spotifySong() {
     if (search === undefined) {
         search = "The Sign Ace of Base";
