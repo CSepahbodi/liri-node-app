@@ -12,3 +12,8 @@ Command: undefined, Search: undefined
 Command: spotify-this-song, Search: I
 Command: movie-this, Search: the
 Command: movie-this, Search: the matrix
+Command: undefined, Search: undefined
+Command: my-tweets, Search: undefined
+Command: undefined, Search: undefined
+Command: spotify-this-song, Search: I wan't it that way
+Command: my-tweets, Search: undefined
