@@ -7,3 +7,8 @@ Commands:
     node liri.js movie-this "<movie_name>"
     node liri.js do-what-it-says
 
+Command: my-tweets, Search: undefined
+Command: undefined, Search: undefined
+Command: spotify-this-song, Search: I
+Command: movie-this, Search: the
+Command: movie-this, Search: the matrix
