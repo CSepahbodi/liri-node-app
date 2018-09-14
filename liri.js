@@ -83,6 +83,7 @@ function movieThis() {
     console.log(command);
     console.log(`\n------------\n`);
 
+    //OMBD api query URL with my OMBD API key.
     var queryUrl = `http://www.omdbapi.com/?t=${search}&y=&plot=short&apikey=e0f54de4`;
 
     Request(queryUrl, function (error, response, body) {

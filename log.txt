@@ -17,3 +17,17 @@ Command: my-tweets, Search: undefined
 Command: undefined, Search: undefined
 Command: spotify-this-song, Search: I wan't it that way
 Command: my-tweets, Search: undefined
+Command: my-tweets, Search: undefined
+Command: my-tweets, Search: undefined
+Command: undefined, Search: undefined
+Command: undefined, Search: undefined
+Command: undefined, Search: undefined
+Command: my-tweets, Search: undefined
+Command: movie-this, Search: the matrix
+Command: do-what-it-says, Search: undefined
+Command: do-what-it-says, Search: "I Want it That Way"
+Command: do-what-it-says, Search: Ace of Base
+Command: do-what-it-says, Search: "I Want it That Way"
+Command: my-tweets, Search: undefined
+Command: spotify-this-song, Search: feel good inc.
+Command: movie-this, Search: casablanca
